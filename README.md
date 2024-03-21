@@ -25,7 +25,30 @@ I've been tasked with analyzing smart device usage data to understand trends and
 
 ## Prepare
 **Data Sources:**
-- **FitBit Fitness Tracker Data:** Contains personal fitness tracker data from thirty Fitbit users, including information on activity, steps, and heart rate.
+
+1. **Where is my data stored?**
+- My data is stored in MySQL Workbench, as indicated by the SQL queries I performed on tables such as daily_activity, heartrate_seconds, hourly_activity, minute_sleep, minutemets_narrow, sleep_day, and weight_loginfo.
+
+2. **How is my data organized? Is it in long or wide format?**
+- My data appears to be organized in tables within a relational database (MySQL Workbench). Each table represents a different type of data, such as daily activity, heart rate readings, hourly activity, sleep data, and weight log information. This suggests a wide format organization, where each variable has its own column.
+
+3. **Are there issues with bias or credibility in this data? Does my data ROCCC?**
+- I haven't directly determined bias or credibility issues in the data from the provided SQL operations alone. However, issues such as incomplete data, inconsistencies in data types, and missing values could potentially affect the credibility of my data. Further analysis and exploration may be needed to assess potential biases.
+- ROCCC stands for Reliability, Originality, Currency, Coverage, and Credibility. Without additional context, it's challenging to assess the data against these criteria. However, ensuring data completeness, accuracy, and proper formatting can contribute to its reliability and credibility.
+
+4. **How am I addressing licensing, privacy, security, and accessibility?**
+- I haven't explicitly addressed licensing, privacy, security, or accessibility concerns in the provided information. However, it's important for me to ensure compliance with relevant data protection regulations (such as GDPR or CCPA) and implement appropriate security measures to protect sensitive data stored in MySQL Workbench.
+
+5. **How did I verify the data’s integrity?**
+
+- I verified the integrity of my data through SQL queries to count the number of rows imported and the number of unique participants in each table. Additionally, I performed data formatting operations to ensure consistency and correctness in data representation.
+
+6. **How does it help me answer my question?**
+- The data stored in MySQL Workbench, once properly formatted and verified, can be used to analyze various aspects related to daily activity, heart rate, sleep patterns, and weight management. By structuring the data appropriately and ensuring its integrity, I can derive insights and make informed decisions based on the data.
+
+7. **Are there any problems with the data?**
+
+- Potential problems with my data could include incomplete imports, inconsistencies in data types, missing values, or data entry errors. I partially addressed these issues through SQL operations such as data type modifications, addition of new columns, and data formatting. However, further exploration and data cleansing may be necessary to identify and rectify any remaining problems.
 
 ## Process
 **Key Tasks:**
